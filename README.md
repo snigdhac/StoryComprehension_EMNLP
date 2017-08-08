@@ -3,13 +3,13 @@
 This code was used for the following paper:
 Snigdha Chaturvedi, Haoruo Peng, and Dan Roth, 'Story Comprehension for Predicting What Happens Next', EMNLP 2017
 
-Each file for a model begins with a main() and has a few lines which set the properties. Before running the code, ensure that:
+Before running the code, ensure that:
 
 a. the data is stored in Dataset/RoCStories/
 
 b. SemLM features are extracted and stored in Resources/SemLM_Feats/
 
-c. out/sentModel/ is populated. Otherwise use "p.put("retrainSentModel", Configurator.TRUE);" to retrain a sentiment language model using the given corpus of unannotated stories. This might take a while.
+c. out/sentModel/ is populated. Otherwise change properties (see below) to "p.put("retrainSentModel", Configurator.TRUE);" to retrain a sentiment language model using the given corpus of unannotated stories. This might take a while.
 
 d. out/predictions folder exists
 
@@ -35,6 +35,7 @@ Note: You can change the parameters of this model in edu.illinois.cs.cogcomp.Joi
 All models (expect LR) also create the following files (containing features) which can be reused for other models: 
 out/semFeaturesTrain.arff, out/sentFeaturesTrain.arff, out/topicFeaturesTrain.arff, out/semFeaturesTest.arff, out/sentFeaturesTest.arff, out/topicFeaturesTest.arff
 
+Each main() has a few lines which set the properties/configurations.
 ********************************************************
 
 If you want to use this code for another dataset, you will have to 
