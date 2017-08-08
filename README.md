@@ -1,7 +1,7 @@
 # StoryComprehension_EMNLP
 
 This code was used for the following paper:
-Snigdha CHaturvedi, Haoruo Peng, and Dan Roth, 'Story Comprehension for Predicting What Happens Next', EMNLP 2017
+Snigdha Chaturvedi, Haoruo Peng, and Dan Roth, 'Story Comprehension for Predicting What Happens Next', EMNLP 2017
 
 Each file for a model begins with a main() and has a few lines which set the properties. Before running the code, ensure that:
 
@@ -14,6 +14,8 @@ c. out/sentModel/ is populated. Otherwise use "p.put("retrainSentModel", Configu
 d. out/predictions folder exists
 
 e. download the file glove.6B.100d.txt and place it in Resources/preTrainedGloveVectors. Check ReadMe.txt in that folder to know where to get it from.
+
+*******************************************************
 
 For obtaining results for various models, run the main functions in:
 1. For LR (baseline) -- edu.illinois.cs.cogcomp.FlatClassifier
@@ -32,6 +34,8 @@ Note: You can change the parameters of this model in edu.illinois.cs.cogcomp.Joi
 
 All models (expect LR) also create the following files (containing features) which can be reused for other models: 
 out/semFeaturesTrain.arff, out/sentFeaturesTrain.arff, out/topicFeaturesTrain.arff, out/semFeaturesTest.arff, out/sentFeaturesTest.arff, out/topicFeaturesTest.arff
+
+********************************************************
 
 If you want to use this code for another dataset, you will have to 
 
