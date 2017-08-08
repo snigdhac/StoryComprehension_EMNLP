@@ -1,0 +1,13 @@
+This dataset was used in the following publication: 
+S Chaturvedi, H Peng, D Roth, 'Story Comprehension for Predicting What Happens Next', Conference on Empirical Methods in Natural Language Processing (EMNLP) 2017
+However, it was not created by the authors of the above publication, and hence the above publication is not the correct citation for this dataset. It was downloaded (Aug,2016) from here:
+http://cs.rochester.edu/nlp/rocstories/
+
+It contains 3 files released in Fall 2016:
+50KStories.csv: contains about 45500 5-sentence long stories 
+cloze_test_val__spring2016 - cloze_test_ALL_val.tsv: validation set consisting of 4 sentences and 2 options for the 5th sentence. Also contains which option is the 'correct' ending.  
+test_spring2016.tsv: test set consisting of 4 sentences and 2 options for the 5th sentence. Also contains which option is the 'correct' ending.
+
+ROCStories_winter2017.csv was released in Decmber 2016
+
+100KStories.csv is merger of 50KStories.csv and ROCStories_winter2017.csv
