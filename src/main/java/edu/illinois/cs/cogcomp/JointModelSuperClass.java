@@ -49,7 +49,7 @@ public class JointModelSuperClass {
         p.put("retrainSentModel", Configurator.FALSE);// do you want to retrain a sentiment language model from unannotated story corpus? Set to TRUE if out/sentModel/ is empty
 
         // input for aspect 2: topical Coherence related files
-        p.put("gloveVectorsFile", "/shared/corpora/snigdha/preTrainedGloveVectors/glove.6B.100d.txt");
+        p.put("gloveVectorsFile", "Resources/preTrainedGloveVectors/glove.6B.100d.txt");
         p.put("stopWordsFile", "Resources/nltkStopwords.txt");
 
         p.put("aspect0FeaturesTrain", "out/semFeaturesTrain.arff");
