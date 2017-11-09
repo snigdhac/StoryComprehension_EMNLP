@@ -1,5 +1,16 @@
 # StoryComprehension_EMNLP
 
+Quick start-up:
+1. Get this project on your machine
+2. Download glove.6B.100d.txt from https://nlp.stanford.edu/projects/glove/ and place it in Resources/preTrainedGloveVectors.
+3. Inside this extracted folder, do:
+    mvn clean
+    mvn install
+    mvn -e exec:java -Dexec.mainClass=edu.illinois.cs.cogcomp.Run4_ContextAwareHVModel
+
+This runs the proposed model. See details below to troubleshoot and try different settings and models.
+
+*****************************************************
 This code was used for the following paper:
 Snigdha Chaturvedi, Haoruo Peng, and Dan Roth, 'Story Comprehension for Predicting What Happens Next', EMNLP 2017
 
@@ -17,7 +28,7 @@ e. download the file glove.6B.100d.txt and place it in Resources/preTrainedGlove
 
 *******************************************************
 
-For obtaining results for various models, run the main functions in:
+For obtaining results for various models, the relevant main functions are:
 1. For LR (baseline) -- edu.illinois.cs.cogcomp.FlatClassifier
 Output: out/predictions/predictions_LR.csv // predictions of LR model
 
